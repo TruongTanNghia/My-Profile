@@ -11,17 +11,17 @@ import {
 
 export const NavBar = () => {
 
-  const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    }
+    const [activeLink, setActiveLink] = useState('home');
+    const [scrolled, setScrolled] = useState(false);
+  
+    useEffect(() => {
+        const onScroll = () => {
+          if (window.scrollY > 50) {
+            setScrolled(true);
+          } else {
+            setScrolled(false);
+          }
+        }
 
     window.addEventListener("scroll", onScroll);
 
@@ -60,7 +60,7 @@ export const NavBar = () => {
             </span>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
-    </Router >
+      </Navbar >
+    </Router>
   )
 }
