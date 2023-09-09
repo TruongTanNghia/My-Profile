@@ -60,7 +60,7 @@ export const NavBar = () => {
             </span>
           </Navbar.Collapse>
         </Container>
-      </Navbar >
+      </Navbar>
     </Router>
   )
 }
